@@ -8,8 +8,7 @@ class MoviesController < ApplicationController
   end
 
   def new
-    #render template: "movies/new"
-    @the_movie = movies.new
+    #@the_movie = movies.new
     render template: "movies/new"
   end
 
