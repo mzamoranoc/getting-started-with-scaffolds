@@ -38,7 +38,7 @@ class MoviesController < ApplicationController
       @the_movie.save
       redirect_to("/movies", { :notice => "Movie created successfully." })
     else
-      render({ :template => "movies.new"})
+      render({ :template => "movies/with_errors"})
     end
   end
 
